@@ -5,6 +5,7 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
+    region: us-east-1
     steps:
 
       - name: checkout repo content
@@ -21,7 +22,6 @@ jobs:
           pip install -r requirements.txt
           
       - name: execute py script # run sj-gobierno.py to get the latest data
-        region: eu-west-1
         run: python s3-sys.py
           
       - name: commit files
