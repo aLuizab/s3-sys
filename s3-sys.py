@@ -13,8 +13,6 @@ s3_connection = S3Connection(
 
 cloudwatch = boto3.client('cloudwatch')
 s3 = boto3.resource('s3')
-kms = boto3.client('kms')
-region_name=boto3.region_name('us-east-1')
 
 def bucket_size_cloudwatch(bucket):
     try:
