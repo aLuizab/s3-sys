@@ -5,7 +5,6 @@ from datetime import timedelta, datetime
 import math
 from boto.s3.connection import S3Connection
 
-[default]
 region = us-east-1
 
 s3_connection = S3Connection(
