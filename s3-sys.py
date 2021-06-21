@@ -4,8 +4,9 @@ import boto
 from datetime import timedelta, datetime
 import math
 from boto.s3.connection import S3Connection
+import os
 
-region = 'us-east-1'
+os.environ['AWS_DEFAULT_REGION'] = 'us-east-1' 
 
 s3_connection = S3Connection(
     aws_access_key_id = 'AWS_ACCESS_KEY_ID',
