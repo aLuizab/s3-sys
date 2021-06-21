@@ -6,12 +6,9 @@ import math
 from boto.s3.connection import S3Connection
 import os
 
-os.environ['AWS_DEFAULT_REGION'] = 'us-east-1' 
-
-s3_connection = S3Connection(
-    aws_access_key_id = 'AWS_ACCESS_KEY_ID',
-    aws_secret_access_key = 'AWS_SECRET_ACCESS_KEY'
-)
+os.environ['AWS_DEFAULT_REGION'] = 'us-east-1'
+os.environ['AWS_ACCESS_KEY_ID'] = 'AWS_ACCESS_KEY_ID'
+os.environ['AWS_SECRET_ACCESS_KEY'] = 'AWS_SECRET_ACCESS_KEY'
 
 cloudwatch = boto3.client('cloudwatch')
 s3 = boto3.resource('s3')
