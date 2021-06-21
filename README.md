@@ -2,7 +2,7 @@
 
 ### Local configuration
 
-First of all, you need to configure your local to run the script. 
+First of all, you need to configure your local environment to run the script. 
 
 Configure your AWS credentials using [this](https://docs.aws.amazon.com/cli/latest/reference/configure/#examples) documentation.
 
